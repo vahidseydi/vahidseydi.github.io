@@ -1,9 +1,0 @@
-# Site settings
-title: Home Page
-auther:
-  name: Vahid Seydi
-  email: vahidseydi@gmail.com
-description: "Vahid Seydi Homepage on GH-pages"
-
-# Build settings
-remote_theme: jekyll/minima
