@@ -6,10 +6,10 @@
     <div class="row" > 
         {% for CT in CTs %}    
           <!---------------------------------------------------------------------------------->
-          <div class="col">
+          <div class="col-md-6 col-sm-6">
             <div class="serviceBox">
                 <h3 class="title">{{CT.degree}}</h3>
-                <a href="#" onclick="return false;" class="read-more  date" style="float:left">{{CT.start}}</a><a href="#" onclick="return false;" class="read-more  date" style="float:right">{{CT.end}}</a>
+                <a href="#" class="read-more  date" style="float:left">{{CT.start}}</a><a href="#"  class="read-more  date" style="float:right">{{CT.end}}</a>
                 </br></br></br>
                 {% for l in CT.courses %}
                     <p style="text-align:left; color:gray">{{l}}</p>

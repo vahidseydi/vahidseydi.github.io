@@ -1,8 +1,8 @@
 <section class="resume-section" id="biography">
     <div class="container">
-        <div class="row" style="margin-bottom:200px; padding-top:100px">
-            <div  class="col" >
-                <img  src="/assets/img/profile.jpg"  style="position:relative; padding-rigth:30px; padding-bottom:30px;"  height="400"  alt="" >
+        <div class="row">
+            <div  class="class=col-md-auto" >
+                <img  src="/assets/img/profile.jpg"  style="position:relative; padding-rigth:30px; padding-bottom:30px;"  height="450"  alt="" >
             </div>
             <div  class="col" style="margin-left:20px" >
                 <h2>Biography</h2>

@@ -9,14 +9,14 @@
           <div class="serviceBox">
             <img src="/assets/img/{{interest.image}}" alt="">
             <h3 class="title"></h3>
-            <a href="#" class="read-more Model">Model</a><a href="#" class="read-more Application">Application</a>
+            <a href="#" onclick="return false;" class="read-more Model">Model</a><a href="#" onclick="return false;" class="read-more Application">Application</a>
             <h3 class="title"></h3>
             {% for model in interest.models %}
-              <a href="#" class="read-more Model">{{model}}</a>   
+              <a href="#" onclick="return false;" class="read-more Model">{{model}}</a>   
             {% endfor %}
             <h3 class="title"></h3>
             {% for app in interest.applications %}
-              <a href="#" class="read-more Application">{{app}}</a>    
+              <a href="#" onclick="return false;" class="read-more Application">{{app}}</a>    
             {% endfor %}               
           </div>
         </div>

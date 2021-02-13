@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">      
           <!---------------------------------------------------------------------------------->
-          <div class="col-md-4 col-sm-3">
+          <div class="col">
             <div class="serviceBox">
               <img src="/assets/img/Programing.PNG" alt="">
               <h3 class="title"></h3>            
@@ -17,7 +17,7 @@
             </div>
           </div>
           <!---------------------------------------------------------------------------------->   
-          <div class="col-md-4 col-sm-3">       
+          <div class="col">       
             <div class="serviceBox">
               <img src="/assets/img/others.PNG" alt="">
               <h3 class="title"></h3>
@@ -29,7 +29,7 @@
             </div>
           </div>
           <!---------------------------------------------------------------------------------->
-          <div class="col-md-4 col-sm-3">
+          <div class="col">
             <div class="serviceBox">
               <img src="/assets/img/Writing.PNG" alt="">
               <h3 class="title"></h3>

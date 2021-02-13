@@ -6,7 +6,7 @@
     <div class="row" > 
         {% for CT in CTs %}    
           <!---------------------------------------------------------------------------------->
-          <div class="col-md-6 col-sm-6">
+          <div class="col">
             <div class="serviceBox">
                 <h3 class="title">{{CT.degree}}</h3>
                 <a href="#" class="read-more  date" style="float:left">{{CT.start}}</a><a href="#"  class="read-more  date" style="float:right">{{CT.end}}</a>

@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">      
       {% for interest in interests %}
-        <div class="col">
+        <div class="col-md-3 col-sm-6">
           <div class="serviceBox">
             <img src="/assets/img/{{interest.image}}" alt="">
             <h3 class="title"></h3>
