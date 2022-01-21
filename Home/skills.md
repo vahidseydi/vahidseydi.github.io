@@ -1,5 +1,6 @@
 {% assign skills = site.data.data.skills %}
 {% if skills %}
+
 <section class="resume-section" id="skills">
 <h2 style="text-align: center; margin-bottom:20px;">Skills</h2>
   <div class="container">
@@ -46,4 +47,3 @@
   </div>
 </section>
 {% endif %}
-

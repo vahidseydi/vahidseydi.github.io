@@ -1,5 +1,6 @@
 {% assign interests = site.data.data.research_interests %}
 {% if interests %}
+
 <section class="resume-section" id="research_interests">
 <h2 style="text-align: center; margin-bottom:20px;">Research Interests</h2>
   <div class="container">
@@ -24,4 +25,3 @@
     </div>
   </div>
   {% endif %}
-

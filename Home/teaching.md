@@ -1,5 +1,6 @@
 {% assign CTs = site.data.data.teaching %}
 {% if CTs %}
+
 <section class="resume-section" id="teaching">
 <h2 style="text-align: center; margin-bottom:20px;">Teaching</h2>
   <div class="container">
@@ -23,8 +24,3 @@
   </div>
 </section>
 {% endif %}
-
-
-
-
-
