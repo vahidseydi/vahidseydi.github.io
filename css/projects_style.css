@@ -1,0 +1,115 @@
+/* Timeline holder */
+ul.prj_timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.prj_timeline:before {
+  content: " ";
+  background: rgb(255, 255, 255);
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 8px;
+  height: 100%;
+  z-index: 200;
+  border-radius: 1rem;
+}
+
+li.prj_timeline-item {
+  margin: 20px 20px;
+  color: rgb(86, 82, 133);
+}
+
+/* Timeline item arrow */
+.prj_timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.prj_timeline-item::before {
+  content: " ";
+  background: rgb(187, 184, 224);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.prj_year {
+  color: darkblue;
+  font-family: "Roboto", sans-serif;
+  float: right;
+  font-size: 1.2em;
+}
+h3.prj_title {
+  color: darkblue;
+  font-size: 150%;
+}
+p.prj_desc {
+  margin-top: 1.5em;
+  color: black;
+  font-family: "inter", sans-serif;
+  text-align: justify;
+  font-size: 0.98em;
+}
+p.prj_status {
+  color: darkblue;
+  text-transform: none;
+  font-family: "inter", sans-serif;
+  font-weight: 0.1em;
+  font-size: 0.9em;
+}
+
+p.prj_value {
+  color: rgb(57, 9, 9);
+  text-transform: none;
+  font-family: "inter", sans-serif;
+  font-weight: 0.1em;
+  font-size: 0.9em;
+}
+
+p.prj_role {
+  margin-top: 1.5em;
+  color: rgb(85, 85, 85);
+  font-family: "Roboto", sans-serif;
+  font-weight: 0.5em;
+  font-size: 0.95em;
+  text-align: justify;
+}
+
+p a {
+  color: rgb(98, 98, 192);
+}
+
+p.prj_Concentrations {
+  color: darkblue;
+  font-family: "Roboto", sans-serif;
+  font-weight: 0.5em;
+  font-size: 0.95em;
+  text-align: justify;
+}
+.prj_tools {
+  color: darkblue;
+  font-family: "Roboto", sans-serif;
+  font-weight: 0.5em;
+  font-size: 0.95em;
+  text-align: justify;
+}
+.prj_section {
+  color: rgb(132, 139, 0);
+  font-family: "Roboto", sans-serif;
+  font-weight: 0.5rem;
+  font-size: 0.95rem;
+}
