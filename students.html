@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -27,6 +27,8 @@
 <link rel="stylesheet" href="/css/publication_style.css" />
 <link rel="stylesheet" href="/css/projects_style.css" />
 <link rel="stylesheet" href="/css/group_style.css" />
+<link rel="stylesheet" href="/css/modules_style.css" />
+<link rel="stylesheet" href="/css/tabel.css" />
 
 <!-- Scrollbar Custom CSS -->
 <link
@@ -96,14 +98,28 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 -->
+<!--for LaTex-->
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+    },
+  };
+</script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
 
-    </head>
-    <body>
-
-        <div class="wrapper">
-
-            <!-- Sidebar -->
-             
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+       
 
 <nav id="sidebar">
     <div class="sidebar-header">
@@ -155,13 +171,11 @@
                         
                             <li ><a href=/Courses/machine_learning style="margin-left:40px">Machine Learning</a></li>                            
                         
-                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
-                        
-                            <li ><a href=/Courses/nlp style="margin-left:40px">Natural Language Programing</a></li>                            
-                        
                             <li ><a href=/Courses/data_mining style="margin-left:40px">Data Mining</a></li>                            
                         
                             <li ><a href=/Courses/artificial_intelligence style="margin-left:40px">Artificial Intelligence</a></li>                            
+                        
+                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
                          
                     </ul> 
                 </li>
@@ -189,19 +203,19 @@
 
 
 
-        
-            <!-- Page Content -->
-            <!-- We'll fill this with dummy content -->
-            
-            <div id="content">
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">    
-                        <button type="button" id="sidebarCollapse" class="btn btn-info"  >
-                            <i class="fas fa-align-left" aria-hidden="true"></i>
-                            <span></span> <!--Toggle Sidebar-->
-                        </button>
-                        <!--
+      <!-- Page Content -->
+      <!-- We'll fill this with dummy content -->
+
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left" aria-hidden="true"></i>
+              <span></span>
+              <!--Toggle Sidebar-->
+            </button>
+            <!--
                         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-align-justify"></i>
                         </button>
@@ -223,9 +237,9 @@
                             </ul>
                         </div>
                         -->
-                    </div>
-                </nav>         
-                
+          </div>
+        </nav>
+        
 <section class="resume-section" id="students">
     <div class="container">
         <div class="row">
@@ -448,10 +462,9 @@ of matrix factorisation method in recommender systems
 
             
         
-            </div>            
-        
-        </div>  
-        
+      </div>
+    </div>
+    
  <!-- jQuery CDN - Slim version (=without AJAX) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -498,6 +511,6 @@ of matrix factorisation method in recommender systems
 
 
 
-           
-    </body>
+
+  </body>
 </html>

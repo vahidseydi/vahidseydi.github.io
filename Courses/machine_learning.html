@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -27,6 +27,8 @@
 <link rel="stylesheet" href="/css/publication_style.css" />
 <link rel="stylesheet" href="/css/projects_style.css" />
 <link rel="stylesheet" href="/css/group_style.css" />
+<link rel="stylesheet" href="/css/modules_style.css" />
+<link rel="stylesheet" href="/css/tabel.css" />
 
 <!-- Scrollbar Custom CSS -->
 <link
@@ -96,14 +98,28 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 -->
+<!--for LaTex-->
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+    },
+  };
+</script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
 
-    </head>
-    <body>
-
-        <div class="wrapper">
-
-            <!-- Sidebar -->
-             
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+       
 
 <nav id="sidebar">
     <div class="sidebar-header">
@@ -155,13 +171,11 @@
                         
                             <li ><a href=/Courses/machine_learning style="margin-left:40px">Machine Learning</a></li>                            
                         
-                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
-                        
-                            <li ><a href=/Courses/nlp style="margin-left:40px">Natural Language Programing</a></li>                            
-                        
                             <li ><a href=/Courses/data_mining style="margin-left:40px">Data Mining</a></li>                            
                         
                             <li ><a href=/Courses/artificial_intelligence style="margin-left:40px">Artificial Intelligence</a></li>                            
+                        
+                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
                          
                     </ul> 
                 </li>
@@ -189,19 +203,19 @@
 
 
 
-        
-            <!-- Page Content -->
-            <!-- We'll fill this with dummy content -->
-            
-            <div id="content">
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">    
-                        <button type="button" id="sidebarCollapse" class="btn btn-info"  >
-                            <i class="fas fa-align-left" aria-hidden="true"></i>
-                            <span></span> <!--Toggle Sidebar-->
-                        </button>
-                        <!--
+      <!-- Page Content -->
+      <!-- We'll fill this with dummy content -->
+
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left" aria-hidden="true"></i>
+              <span></span>
+              <!--Toggle Sidebar-->
+            </button>
+            <!--
                         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-align-justify"></i>
                         </button>
@@ -223,16 +237,131 @@
                             </ul>
                         </div>
                         -->
-                    </div>
-                </nav>         
-                <p>Updating!</p>
+          </div>
+        </nav>
+        <h1 id="machine-learning-learning-from-data">Machine Learning (Learning from Data)</h1>
+
+<p><i class="fas fa-calendar" style="margin-right:1.5em"></i>
+2014 - 2020</p>
+
+<p><br /></p>
+
+<h2 id="overview">Overview</h2>
+
+<p class="module-overview">
+This is an introductory module in machine learning(ML) that covers basic concepts, algorithms, and applications. ML is the science of dealing with data and somehow mimics the learning process of encountering data. The different parts of the module are arranged in a way to explain the mathematical concepts in a step-by-step as well as a practical process.<br />
+It is a exciting journey that starts with supervised learning and regression, then goes through classification and finally enters the world of unsupervised learning.
+</p>
+<p><br /></p>
+
+<h2 id="syllabus">Syllabus</h2>
+
+<ul>
+  <li>The Learning Problem
+    <ul>
+      <li>Introduction, Is learning feasible</li>
+      <li>Supervised, Unsupervised and Reinforcement Learning</li>
+    </ul>
+  </li>
+  <li>Linear Regression
+    <ul>
+      <li>data, model</li>
+      <li>simple linear regression model</li>
+      <li>Multiple Regression</li>
+      <li>Batch gradient descent vs gradient descent</li>
+      <li>probability prespective</li>
+    </ul>
+  </li>
+  <li>Assessing Performance
+    <ul>
+      <li>Theory of Generalization, Training error, Generalization error, Test error</li>
+      <li>Overfitting, Learning Curve</li>
+      <li>Bias and Bariance</li>
+      <li>Noise</li>
+      <li>Training/validation/test split, Cross Validation</li>
+    </ul>
+  </li>
+  <li>Regularization
+    <ul>
+      <li>Curse of Dimension</li>
+      <li>L2 Regularization</li>
+      <li>Feature Selection, Forward and Backward Stepwise Algorithm</li>
+      <li>Lasso, Coordinate descent</li>
+    </ul>
+  </li>
+  <li>Kernel Regression
+    <ul>
+      <li>Parametric and Non-parametric Approaches</li>
+      <li>Distance metrics, Nearest neighbor algorithm</li>
+      <li>weighted k-NN to kernel regression</li>
+      <li>k-NN for classification</li>
+    </ul>
+  </li>
+  <li>Support Vector Machines
+    <ul>
+      <li>Hard margin and soft margin</li>
+      <li>convex optimization, Lagrangian, primal problem and the dual problem</li>
+      <li>Sub-gradient descent</li>
+      <li>RBF Kernel</li>
+    </ul>
+  </li>
+  <li>Linear Classifiers
+    <ul>
+      <li>Decision boundaries</li>
+      <li>Overfitting &amp; Regularization in Logistic Regression</li>
+      <li>Classification metrics, Precision-Recall</li>
+    </ul>
+  </li>
+  <li>Artificial Neural Network
+    <ul>
+      <li>definition of NN</li>
+      <li>FeedForward Neural Network and backpropagation</li>
+      <li>Multi-Layer Perceptron</li>
+      <li>Recurrent NN</li>
+      <li>ConvolutionL Filter</li>
+      <li>Autoencoder</li>
+    </ul>
+  </li>
+  <li>Decision Trees
+    <ul>
+      <li>categorical inputs</li>
+      <li>Recursive greedy algorithm</li>
+      <li>Entropy</li>
+      <li>Overfitting in Decision Trees</li>
+      <li>Principle of Occam’s razor</li>
+      <li>Ensemble classifiers and Boosting
+        <ul>
+          <li>Random Forest</li>
+          <li>AdaBoost</li>
+          <li>XGBoost</li>
+        </ul>
+      </li>
+      <li>Handling Missing Data</li>
+    </ul>
+  </li>
+  <li>Retrival
+    <ul>
+      <li>Nearest Neighbor Search</li>
+      <li>Distance metrics, Euclidean and scaled Euclidean</li>
+      <li>KD-tree representation, LSH</li>
+    </ul>
+  </li>
+  <li>Clustering
+    <ul>
+      <li>k-means, k-means++</li>
+      <li>MapReduce</li>
+      <li>Mixture Models, Gaussian distributions, EM</li>
+      <li>Topic Modelling, Latent Dirichlet Allocation</li>
+      <li>Hierarchical Clustering</li>
+    </ul>
+  </li>
+</ul>
 
             
         
-            </div>            
-        
-        </div>  
-        
+      </div>
+    </div>
+    
  <!-- jQuery CDN - Slim version (=without AJAX) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -279,6 +408,6 @@
 
 
 
-           
-    </body>
+
+  </body>
 </html>

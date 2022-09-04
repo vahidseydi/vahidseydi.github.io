@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -27,6 +27,8 @@
 <link rel="stylesheet" href="/css/publication_style.css" />
 <link rel="stylesheet" href="/css/projects_style.css" />
 <link rel="stylesheet" href="/css/group_style.css" />
+<link rel="stylesheet" href="/css/modules_style.css" />
+<link rel="stylesheet" href="/css/tabel.css" />
 
 <!-- Scrollbar Custom CSS -->
 <link
@@ -96,14 +98,28 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 -->
+<!--for LaTex-->
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+    },
+  };
+</script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
 
-    </head>
-    <body>
-
-        <div class="wrapper">
-
-            <!-- Sidebar -->
-             
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+       
 
 <nav id="sidebar">
     <div class="sidebar-header">
@@ -155,13 +171,11 @@
                         
                             <li ><a href=/Courses/machine_learning style="margin-left:40px">Machine Learning</a></li>                            
                         
-                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
-                        
-                            <li ><a href=/Courses/nlp style="margin-left:40px">Natural Language Programing</a></li>                            
-                        
                             <li ><a href=/Courses/data_mining style="margin-left:40px">Data Mining</a></li>                            
                         
                             <li ><a href=/Courses/artificial_intelligence style="margin-left:40px">Artificial Intelligence</a></li>                            
+                        
+                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
                          
                     </ul> 
                 </li>
@@ -189,19 +203,19 @@
 
 
 
-        
-            <!-- Page Content -->
-            <!-- We'll fill this with dummy content -->
-            
-            <div id="content">
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">    
-                        <button type="button" id="sidebarCollapse" class="btn btn-info"  >
-                            <i class="fas fa-align-left" aria-hidden="true"></i>
-                            <span></span> <!--Toggle Sidebar-->
-                        </button>
-                        <!--
+      <!-- Page Content -->
+      <!-- We'll fill this with dummy content -->
+
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left" aria-hidden="true"></i>
+              <span></span>
+              <!--Toggle Sidebar-->
+            </button>
+            <!--
                         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-align-justify"></i>
                         </button>
@@ -223,16 +237,110 @@
                             </ul>
                         </div>
                         -->
-                    </div>
-                </nav>         
-                <p>Updating!</p>
+          </div>
+        </nav>
+        <h1 id="object-oriented-programming">Object Oriented Programming</h1>
+
+<p><i class="fas fa-calendar" style="margin-right:1.5em"></i>
+2010 - 2021</p>
+
+<p><br /></p>
+
+<h2 id="overview">Overview</h2>
+
+<p class="module-overview">
+In this module, the goal is to teach the fundamentals of programming in the object-oriented paradigm. The main objective is to learn how to think object-oriented to model a problem. Concepts and tools of object-oriented thinking are taught step by step with a problem-oriented process and many examples. In this version of the module, it is considered to implement Java language. In the previous versions, C++, C# and Python languages are also presented in almost the same format.<br />
+The prerequisite of this course is familiarization with the basic concepts of functional programming and algorithm. It is assumed that the student is familiar with concepts such as variable, condition, and loop, as well as is able to to provide algorithms to solve simple problems.
+</p>
+<p><br /></p>
+
+<h2 id="syllabus">Syllabus</h2>
+
+<ul>
+  <li>Introduction
+    <ul>
+      <li>Foundation of Programming</li>
+      <li>What is the Algorithm</li>
+      <li>How to solve a problem by using an Algorithm</li>
+      <li>what is OOP</li>
+      <li>Theory of Forms</li>
+      <li>Object, Variable, Method</li>
+      <li>Data type vs Object</li>
+      <li>Encapsulation and modifiers</li>
+      <li>Three steps to solve a problem in OOP paradigm</li>
+      <li>Java as a tool to implement OOP concepts</li>
+    </ul>
+  </li>
+  <li>Constructor and Types
+    <ul>
+      <li>why Constractor</li>
+      <li>Types of Constructors</li>
+      <li>Constructor Chaining</li>
+      <li>What happen in the Memory
+        <ul>
+          <li>Stack vs Heap</li>
+          <li>Value Type and a Reference Type</li>
+        </ul>
+      </li>
+      <li>Types in Java</li>
+    </ul>
+  </li>
+  <li>Inheritance
+    <ul>
+      <li>extension</li>
+      <li>parent class(super) and child class(sub)</li>
+      <li>constructors in inheritance</li>
+      <li>methods in inheritance</li>
+      <li>overriding</li>
+      <li>object class and its methods</li>
+    </ul>
+  </li>
+  <li>Casting and polymorphism
+    <ul>
+      <li>Down casting and Up casting</li>
+      <li>implicit and explicit Casting</li>
+      <li>instanceof method</li>
+      <li>Errors</li>
+      <li>Polymorphism</li>
+    </ul>
+  </li>
+  <li>Excption
+    <ul>
+      <li>throw an Error(Excption)</li>
+      <li>Types of Exceptions</li>
+      <li>Define a Custom Error(Excption)</li>
+      <li>Catch an Excption</li>
+    </ul>
+  </li>
+  <li>Abstraction
+    <ul>
+      <li>Abstract class</li>
+      <li>Contract and interface</li>
+      <li>multiple inheritance</li>
+      <li>Comparable interface and compareTo method</li>
+      <li>Collections and Arrays class</li>
+      <li>find a triple</li>
+    </ul>
+  </li>
+  <li>Linked list
+    <ul>
+      <li>Static methods</li>
+      <li>final keywords</li>
+      <li>inner classes</li>
+      <li>static arrays vs dynamic arrays</li>
+      <li>linked list from scratch</li>
+      <li>Java LinkedList</li>
+      <li>Generics</li>
+      <li>Sets and Maps</li>
+    </ul>
+  </li>
+</ul>
 
             
         
-            </div>            
-        
-        </div>  
-        
+      </div>
+    </div>
+    
  <!-- jQuery CDN - Slim version (=without AJAX) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -279,6 +387,6 @@
 
 
 
-           
-    </body>
+
+  </body>
 </html>

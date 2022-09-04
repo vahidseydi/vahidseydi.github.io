@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -27,6 +27,8 @@
 <link rel="stylesheet" href="/css/publication_style.css" />
 <link rel="stylesheet" href="/css/projects_style.css" />
 <link rel="stylesheet" href="/css/group_style.css" />
+<link rel="stylesheet" href="/css/modules_style.css" />
+<link rel="stylesheet" href="/css/tabel.css" />
 
 <!-- Scrollbar Custom CSS -->
 <link
@@ -96,14 +98,28 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 -->
+<!--for LaTex-->
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+    },
+  };
+</script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
 
-    </head>
-    <body>
-
-        <div class="wrapper">
-
-            <!-- Sidebar -->
-             
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+       
 
 <nav id="sidebar">
     <div class="sidebar-header">
@@ -155,13 +171,11 @@
                         
                             <li ><a href=/Courses/machine_learning style="margin-left:40px">Machine Learning</a></li>                            
                         
-                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
-                        
-                            <li ><a href=/Courses/nlp style="margin-left:40px">Natural Language Programing</a></li>                            
-                        
                             <li ><a href=/Courses/data_mining style="margin-left:40px">Data Mining</a></li>                            
                         
                             <li ><a href=/Courses/artificial_intelligence style="margin-left:40px">Artificial Intelligence</a></li>                            
+                        
+                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
                          
                     </ul> 
                 </li>
@@ -189,19 +203,19 @@
 
 
 
-        
-            <!-- Page Content -->
-            <!-- We'll fill this with dummy content -->
-            
-            <div id="content">
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">    
-                        <button type="button" id="sidebarCollapse" class="btn btn-info"  >
-                            <i class="fas fa-align-left" aria-hidden="true"></i>
-                            <span></span> <!--Toggle Sidebar-->
-                        </button>
-                        <!--
+      <!-- Page Content -->
+      <!-- We'll fill this with dummy content -->
+
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left" aria-hidden="true"></i>
+              <span></span>
+              <!--Toggle Sidebar-->
+            </button>
+            <!--
                         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-align-justify"></i>
                         </button>
@@ -223,16 +237,215 @@
                             </ul>
                         </div>
                         -->
-                    </div>
-                </nav>         
-                <p>Updating!</p>
+          </div>
+        </nav>
+        <h1 id="artificial-intelligence">Artificial Intelligence</h1>
+
+<p><i class="fas fa-calendar" style="margin-right:1.5em"></i>
+2010 - 2020</p>
+
+<p><br /></p>
+
+<h2 id="overview">Overview</h2>
+
+<p class="module-overview">
+In this module, problem-solving methods from the perspective of the rational agent (one of the four definitions of AI) are investigated. Problems are defined assuming a world for the agent (environment). This world includes a set of states. An agent has a set of actions with which it moves between states. The difference in the structure of the states as well as the agent's level of knowledge from the next state creates a category in artificial intelligence.
+</p>
+<center>
+    <table class="tg">
+<thead>
+  <tr>
+    <th class="tg-blank" colspan="2" rowspan="2"></th>
+    <th class="top-header" colspan="3">what about the next state?</th>
+  </tr>
+  <tr>
+    <th class="tg-env">determined</th>
+    <th class="tg-env">stochastic</th>
+    <th class="tg-env">unknown</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="rotate " rowspan="3">how are states in this environment</td>
+    <td class="tg-state"> Atomic <br /> (simple)</td>
+    <td class="tg-cell">SEARCH</td>
+    <td class="tg-cell">Stochastic Games <br /> Markov Decision Process</td>
+    <td class="tg-cell">Reinforcement Learning</td>
+  </tr>
+  <tr>
+    <td class="tg-state">Factored <br /> (Variables)</td>
+    <td class="tg-cell">CSP <br />LOGIC</td>
+    <td class="tg-cell">Bayes Net</td>
+    <td class="tg-cell"></td>
+  </tr>
+  <tr>
+    <td class="tg-state">Structured</td>
+    <td class="tg-cell">First Order Logic</td>
+    <td class="tg-cell"></td>
+    <td class="tg-cell"></td>
+  </tr>
+</tbody>
+</table>
+
+</center>
+
+<p><br /></p>
+
+<h2 id="syllabus">Syllabus</h2>
+
+\[\color{blue}{Part 1: Introduction to AI}\]
+
+<ul>
+  <li>Introduction
+    <ul>
+      <li>History of AI, Definition of AI, Agents and Environments, Rationality, Utility</li>
+      <li>Types of Agents, Search Problem</li>
+    </ul>
+  </li>
+  <li>Uninformed Search
+    <ul>
+      <li>BFS, DFS, DLS, IDS, BS, UCS</li>
+    </ul>
+  </li>
+  <li>Informed Search
+    <ul>
+      <li>Heuristic Functions</li>
+      <li>Greedy Search, A*, IDA*, RBFS, MA*, SMA*</li>
+    </ul>
+  </li>
+  <li>Constraint Satisfaction Problem
+    <ul>
+      <li>Constraint Graphs, Backtracking Algorithm</li>
+      <li>Improving Backtracking
+        <ul>
+          <li>Filtering, Forward Checking, Arc Consistency</li>
+          <li>Ordering, MRV, LCV,</li>
+          <li>Structure, tree-structured CSP</li>
+        </ul>
+      </li>
+      <li>Local Search
+        <ul>
+          <li>Optimization Problems</li>
+          <li>Iterative improvement, min-conflict heuristic</li>
+          <li>Hill Climbing, Random Walk</li>
+          <li>Simulated Annealing, Beam Search</li>
+          <li>Genetic Algorithm</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Adversarial Search and Games
+    <ul>
+      <li>Forms of Games, Zero-sum game</li>
+      <li>Minimax Theorem, Alpha-Beta Search, Pruning.</li>
+      <li>Stochastic Games, Expectation Minimax</li>
+    </ul>
+  </li>
+  <li>Logical Agents
+    <ul>
+      <li>Propositional Logic, First Order Logic</li>
+      <li>Satisfiability, Planning</li>
+      <li>Logic Representation(Syntax and Semantic), Logic Inference(Forward Chaining, Backward Chaining, Resolution), Unification</li>
+      <li>ProLog</li>
+      <li>Knowledge Representation, Ontology, Objects</li>
+    </ul>
+  </li>
+</ul>
+
+\[\color{blue}{Part 2: Advanced AI}\]
+
+<ul>
+  <li>Markov Decision Process
+    <ul>
+      <li>Definition of Markov Decision Process(MDP), State, Action, Transition Functions, Reward</li>
+      <li>Policy, Optimal Policy, State-value, Q-value, Bellman Equation</li>
+      <li>value iteration, policy iteration</li>
+      <li>Convergence, exploration, exploitation, regret</li>
+    </ul>
+  </li>
+  <li>Reinforcement Learning
+    <ul>
+      <li>Model-based RL, Model-free RL</li>
+      <li>Passive RL, Active RL</li>
+      <li>Temporal-Difference Value Learning,</li>
+      <li>Q-Learning
+        <ul>
+          <li>𝜖-Greedy</li>
+          <li>Approximate Q-learning</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Uncertainty and Probability
+    <ul>
+      <li>Random variables, Probability, PDF, Joint Probability, Conditional Probability</li>
+      <li>Product Rule, Bayes’ theorem, Chain Rule</li>
+      <li>Independence, conditional Independence</li>
+    </ul>
+  </li>
+  <li>Bayes Net
+    <ul>
+      <li>Bayesian Networks</li>
+      <li>Representation
+        <ul>
+          <li>Conditional Independence Semantics
+            <ul>
+              <li>Causal Chains, Common Cause, Common Effect</li>
+            </ul>
+          </li>
+          <li>Active / Inactive Paths</li>
+        </ul>
+      </li>
+      <li>Inference
+        <ul>
+          <li>Exact inference
+            <ul>
+              <li>Enumeration</li>
+              <li>Variable Elimination</li>
+            </ul>
+          </li>
+          <li>Approximate Inference (Sampling)
+            <ul>
+              <li>Prior Sampling</li>
+              <li>Rejection Sampling</li>
+              <li>Likelihood Weighting</li>
+              <li>Gibbs Sampling</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Hidden Markov Model
+    <ul>
+      <li>Markov chain, Markov property, Markov Model, Hidden Markov Model</li>
+      <li>Evaluation
+        <ul>
+          <li>Forward Algorithm</li>
+          <li>Backward Algorithm</li>
+        </ul>
+      </li>
+      <li>Most likely sequence of states(Decoding)
+        <ul>
+          <li>Viterbi algorithm</li>
+        </ul>
+      </li>
+      <li>Training
+        <ul>
+          <li>Viterbi training</li>
+          <li>Baum Welch Algorithm</li>
+        </ul>
+      </li>
+      <li>Particle Filtering, Kalman filter</li>
+    </ul>
+  </li>
+</ul>
 
             
         
-            </div>            
-        
-        </div>  
-        
+      </div>
+    </div>
+    
  <!-- jQuery CDN - Slim version (=without AJAX) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -279,6 +492,6 @@
 
 
 
-           
-    </body>
+
+  </body>
 </html>

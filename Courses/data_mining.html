@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -27,6 +27,8 @@
 <link rel="stylesheet" href="/css/publication_style.css" />
 <link rel="stylesheet" href="/css/projects_style.css" />
 <link rel="stylesheet" href="/css/group_style.css" />
+<link rel="stylesheet" href="/css/modules_style.css" />
+<link rel="stylesheet" href="/css/tabel.css" />
 
 <!-- Scrollbar Custom CSS -->
 <link
@@ -96,14 +98,28 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 -->
+<!--for LaTex-->
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+    },
+  };
+</script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+></script>
 
-    </head>
-    <body>
-
-        <div class="wrapper">
-
-            <!-- Sidebar -->
-             
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+       
 
 <nav id="sidebar">
     <div class="sidebar-header">
@@ -155,13 +171,11 @@
                         
                             <li ><a href=/Courses/machine_learning style="margin-left:40px">Machine Learning</a></li>                            
                         
-                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
-                        
-                            <li ><a href=/Courses/nlp style="margin-left:40px">Natural Language Programing</a></li>                            
-                        
                             <li ><a href=/Courses/data_mining style="margin-left:40px">Data Mining</a></li>                            
                         
                             <li ><a href=/Courses/artificial_intelligence style="margin-left:40px">Artificial Intelligence</a></li>                            
+                        
+                            <li ><a href=/Courses/oop style="margin-left:40px">Object-Oriented Programing</a></li>                            
                          
                     </ul> 
                 </li>
@@ -189,19 +203,19 @@
 
 
 
-        
-            <!-- Page Content -->
-            <!-- We'll fill this with dummy content -->
-            
-            <div id="content">
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">    
-                        <button type="button" id="sidebarCollapse" class="btn btn-info"  >
-                            <i class="fas fa-align-left" aria-hidden="true"></i>
-                            <span></span> <!--Toggle Sidebar-->
-                        </button>
-                        <!--
+      <!-- Page Content -->
+      <!-- We'll fill this with dummy content -->
+
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left" aria-hidden="true"></i>
+              <span></span>
+              <!--Toggle Sidebar-->
+            </button>
+            <!--
                         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-align-justify"></i>
                         </button>
@@ -223,16 +237,99 @@
                             </ul>
                         </div>
                         -->
-                    </div>
-                </nav>         
-                <p>Updating!</p>
+          </div>
+        </nav>
+        <h1 id="data-mining">Data Mining</h1>
+
+<p><i class="fas fa-calendar" style="margin-right:1.5em"></i>
+2014 - 2020</p>
+
+<p><br /></p>
+
+<h2 id="overview">Overview</h2>
+
+<p class="module-overview">
+In many definitions, data mining is the science of data analysis in order to discover existing patterns and trends within data in order to help decision-making and make data useful. This is despite the fact that nowadays we are often faced with big data, the analysis of which requires managing memory and time.<br />
+
+In machine learning, the focus is on learning models, while in this module, data and how to make data useful are the main focus. Therefore, we classify some of the popular big data structures and their related issues and then deliver the methods of solving them.
+
+</p>
+<p><br /></p>
+
+<h2 id="syllabus">Syllabus</h2>
+
+<ul>
+  <li>Data mining definition
+    <ul>
+      <li>Overlap with Databases and Machine learning</li>
+      <li>Descriptive methods and Predictive methods</li>
+    </ul>
+  </li>
+  <li>Documents Retrival
+    <ul>
+      <li>distance measures, Jaccard similarity, cosine similarity, TF-IDF</li>
+      <li>Shingling, Min-Hashing, Locality-Sensitive Hashing</li>
+      <li>Locality-Sensitive Hashing</li>
+    </ul>
+  </li>
+  <li>Clustring
+    <ul>
+      <li>Hierarchical Clustring</li>
+      <li>k-means</li>
+      <li>BFR, CURE</li>
+    </ul>
+  </li>
+  <li>Link Analysis
+    <ul>
+      <li>Graph data</li>
+      <li>Ranking nodes</li>
+      <li>Page rank</li>
+    </ul>
+  </li>
+  <li>Association rules mining
+    <ul>
+      <li>Market-basket model</li>
+      <li>frequent itemsets</li>
+      <li>A-Priori algorithm</li>
+      <li>PCY algorithm</li>
+    </ul>
+  </li>
+  <li>Recommendation Systems
+    <ul>
+      <li>Content-Based RS</li>
+      <li>Collaborative filtering</li>
+      <li>Hybrid Methods</li>
+    </ul>
+  </li>
+  <li>Mining Social-Network Graphs
+    <ul>
+      <li>Girvan-Newman, Modularity, Betweenness</li>
+      <li>Spectral Clustring</li>
+      <li>AGM, BigCLAM</li>
+    </ul>
+  </li>
+  <li>Large-Scale Machine Learning
+    <ul>
+      <li>Supervised Learning</li>
+      <li>k-Nearest Neighbor</li>
+      <li>Perceptron</li>
+      <li>SVM</li>
+      <li>DT</li>
+    </ul>
+  </li>
+  <li>Generative Models
+    <ul>
+      <li>variational Autoencoder</li>
+      <li>GAN</li>
+    </ul>
+  </li>
+</ul>
 
             
         
-            </div>            
-        
-        </div>  
-        
+      </div>
+    </div>
+    
  <!-- jQuery CDN - Slim version (=without AJAX) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -279,6 +376,6 @@
 
 
 
-           
-    </body>
+
+  </body>
 </html>
