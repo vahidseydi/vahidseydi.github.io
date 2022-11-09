@@ -1,0 +1,33 @@
+\documentclass{article}
+
+\usepackage{pyluatex}
+\usepackage{listings}
+\usepackage{luacode}
+
+\begin{luacode}
+function pytypeset()
+    tex.print("\\begin{lstlisting}[language=Python]")
+    tex.print(pyluatex.get_last_code())
+    tex.print("\\end{lstlisting}")
+    tex.print("") -- ensure newline
+end
+\end{luacode}
+
+\newcommand*{\pytypeset}{%
+    \noindent\textbf{Input:}
+    \directlua{pytypeset()}
+    \textbf{Output:}
+    \begin{center}
+        \directlua{tex.print(pyluatex.get_last_output())}
+    \end{center}
+}
+
+\begin{document}
+
+\begin{pythonq}
+greeting = 'Hello PyLuaTeX!'
+print(greeting)
+\end{pythonq}
+\pytypeset
+
+\end{document}

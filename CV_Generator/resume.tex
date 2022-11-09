@@ -1,0 +1,676 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+
+\documentclass{resume} % Use the custom resume.cls style
+%-----------------------------------------------
+
+
+\usepackage{fontawesome}
+\usepackage{etoolbox}
+
+\usepackage[colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=blue]{hyperref}
+\usepackage{bibentry}
+\usepackage{natbib}
+\usepackage{array, xcolor}
+
+\usepackage{pdfpages}	
+
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{p{8 mm}}
+\newcolumntype{R}{p{15 cm}}
+%-------------------------------------------------------------
+\newcommand{\Titr}[1]{
+	\Large\textbf{#1}
+	}
+%-------------------------------------------------------------
+\newcommand{\SubTitr}[1]{
+	\large{#1}
+}
+%-------------------------------------------------------------
+%-------------------------------------------------------------
+%------------------------------------------------------------
+% Command for entering a new work position
+\newcommand{\workposition}[5]{
+	
+	%--------------------------------------------
+	%                    % Duration
+	%--------------------------------------------
+	{\large\textbf{#1}}
+	%--------------------------------------------
+	%                    % Job title & % Duration
+	%--------------------------------------------
+	\hfill
+	\textsc{#2
+		\expandafter\ifstrequal\expandafter{#3}{}{} {\hspace{2pt}--\hspace{2pt}#3}
+	}
+
+	
+	%--------------------------------------------
+	%   Employer 
+	%--------------------------------------------
+	\expandafter\ifstrequal\expandafter{#4}{}{}{{\sffamily\large{#4}}\\}
+	%--------------------------------------------	
+	%      Description
+	%--------------------------------------------
+	\expandafter\ifstrequal\expandafter{#5}{}{}{#5} 
+}
+%--------------------------------------------------------------
+%-------------------------------------------------------------
+%-------------------------------------------------------------
+%------------------------------------------------------------
+
+
+
+\newcommand\VRule{\color{lightgray}\vrule width 0.3pt}
+
+%-----------------------------------------------
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+
+%-----------------------------------------------
+\name{Vahid Seydi} % Your name
+\address{\faPhone \hspace{2 mm} (+98)9354591236 \hspace{7 mm} \& \hspace{7 mm} \faEnvelopeO \hspace{2 mm} vahidseydi@gmail.com} % Your phone number and email
+\address{\faMapMarker \hspace{2 mm} No. 28, Panahi Alley, 57 sq, Farjam St, Tehran, Iran} % Your address
+
+%
+
+
+\begin{document}
+%---------------------------------------
+%    Section RESEARCH INTERESTS
+%----------------------------------------
+\pdfbookmark{Research Interest}{s0}
+%---------------------------------------
+%    Section RESEARCH INTERESTS
+%----------------------------------------
+\pdfbookmark{Research Interest}{s0}
+\begin{rSection}{Research Interest}
+	
+	%	\begin{itemize}	
+	%--------------------------------------------------
+	
+	\Titr{\newline Bayesian Optimization}\\
+	%--------------------------------------------------
+	\begin{tabular}{
+			@{\hspace{0.2cm}} >{\sffamily\small\color{black!80}}p{8cm} 
+			@{\hspace{1cm}} >{\sffamily\small\color{black!80}}p{8cm}			         
+			@{\vspace{2 mm}}}
+		\begin{itemize}
+			\item[] {\Large \color{black!40} Model}	
+			\vspace{3 mm}
+			\item[] Black-box optimization
+			\item[] Multi-objective Black-box optimization	
+			\item[] Meta-Learning		
+			\item[] Gaussian Process	 
+			
+			
+		\end{itemize}
+		&
+		\begin{itemize} 
+			\item[] {\Large \color{black!40}Application}
+			\vspace{3 mm}
+			\item[] Hyper-parameter optimization
+			\item[] few-shot Learning
+			\item[] Transfer learning
+			
+		\end{itemize}
+	\end{tabular}
+	%\vspace{-7mm}
+	%------------------------------------------------	
+	
+	%--------------------------------------------------
+	%\item {\Large \ Deep Learning}\\
+	
+	\Titr{Deep Learning}\\
+	%--------------------------------------------------
+	\begin{tabular}{
+			@{\hspace{0.2cm}} >{\sffamily\small\color{black!80}}p{8cm} 
+			@{\hspace{1cm}} >{\sffamily\small\color{black!80}}p{8cm}			         
+			@{\vspace{2 mm}}}
+		\begin{itemize}
+			\item[] {\Large \color{black!40} Model}	
+			\vspace{3 mm}
+			\item[] Deep Generative Models(GAN \& VAE)
+			\item[] CNN and RNN(GRU,LSTM) based models			
+			\item[] Bayesian Deep Learning
+			\item[] Attention Mechanism
+			\item[] Supervised \& Unsupervised deep models
+			
+			
+		\end{itemize}
+		&
+		\begin{itemize} 
+			\item[] {\Large \color{black!40}Application}
+			\vspace{3 mm}
+			\item[] NLP \& Text mining
+			\item[] Predictive Maintenance			
+			\item[] Anomaly detection
+			\item[] Time Series Forecasting
+			\item[] Machine Vision and Audio(speech) Processing
+			\item[] Health Care
+		\end{itemize}
+	\end{tabular}
+	%\vspace{-7mm}
+	%--------------------------------------------------
+	\\
+	\Titr {Reinforcement Learning}\\
+	%--------------------------------------------------
+	\begin{tabular}{
+			@{\hspace{0.2cm}} >{\sffamily\small\color{black!80}}p{8cm} 
+			@{\hspace{1cm}} >{\sffamily\small\color{black!80}}p{8cm}	         
+			@{\vspace{2 mm}}}
+		\begin{itemize}
+			\item[] {\Large \color{black!40} Model}
+			\vspace{3mm}
+			\item[] Deep Reinforcement Learning
+			\item[] Adversarial Learning
+			\item[] Actor-Critic Model
+			\item[] Q-Learning \& Deep Q-Network						
+		\end{itemize}
+		&
+		\begin{itemize} 
+			\item[] {\Large \color{black!40} Application}
+			\vspace{3mm}
+			\item[] Autonomous Agent			
+			\item[] Continuous Control Systems
+			\item[] Trust Region Optimization(Sentences Generation)				
+		\end{itemize}
+	\end{tabular}
+	%\vspace{-4mm}	
+	%--------------------------------------------------	
+	\\
+	\Titr{Probabilistic models and latent factor analysis} \\
+	%--------------------------------------------------
+	\begin{tabular}{
+			@{\hspace{0.2cm}} >{\sffamily\small\color{black!80}}p{8cm} 
+			@{\hspace{1cm}} >{\sffamily\small\color{black!80}}p{8cm}         
+			@{\vspace{2 mm}}}
+		\begin{itemize}
+			\item[] {\Large\color{black!40} Model}
+			\vspace{3mm}
+			\item[] Clustering \& Retrieval
+			\item[] Matrix Factorization(PMF, NMF,...)
+			\item[] Mixture Models
+			\item[] Explainable Machine Learning(Bayes Net)			
+		\end{itemize}
+		&
+		\begin{itemize} 
+			\item[] {\Large\color{black!40} Application}
+			\vspace{3mm}
+			\item[] 	Topic Model(LDA)		
+			\item[] 	Recommender Systems	
+			\item[] 	Graph Data(Social Network) Analysis
+			\item[]     Community Detection
+			\item[]     Dimension Reduction
+			
+		\end{itemize}
+	\end{tabular}
+	%\vspace{-4mm}	
+	%--------------------------------------------------		
+	\iffalse
+	\\
+	\Titr {Scalable tree models based on ensemble learning}\\
+	%--------------------------------------------------
+	\begin{tabular}{
+			@{\hspace{0.2cm}} >{\sffamily\small\color{black!80}}p{8cm} 
+			@{\hspace{1cm}} >{\sffamily\small\color{black!80}}p{8cm}         
+			@{\vspace{2 mm}}}
+		\begin{itemize}
+			\item[] {\Large\color{black!40} Model}	
+			\vspace{3mm}
+			\item[] LGBM
+			\item[] XGBoost			
+			\item[] AdaBoost
+			\item[] CatBoost
+		\end{itemize}
+		&
+		\begin{itemize} 
+			\item[] {\Large\color{black!40} Application}
+			\vspace{3mm}
+			\item[] Regression problems			
+			\item[] Classification problems				
+		\end{itemize}
+	\end{tabular}
+	\fi	
+	%\vspace{-3mm}	
+	%	\end{itemize}
+\end{rSection}
+\newpage
+%---------------------------------------
+%    Section Education
+%----------------------------------------
+\pdfbookmark{Education}{s1}
+\begin{rSection}{Education}
+%	\begin{itemize}	
+	%---------------------------------------
+	%    Pi School
+	%----------------------------------------
+	\item
+		{\Large \textbf {School of Artificial Intelligence}}
+		%-----------------date-------------------
+		\hfill{\small April 2019 -- June 2019}
+		%-----------------location-------------------
+		\vspace{2 mm}
+		\\
+		{\large \em \href{https://picampus-school.com/programme/school-of-ai/}
+			{Pi School, Pi Campus, Rome, Italy}
+		}
+		\\{\small(one of 20 merit-based full scholarships)}
+		\vspace{3 mm}
+		%-----------------Thesis-------------------
+		\\
+		\begin{tabular}{ 
+				@{\hspace{1.5cm}}>{\bf \em \small}l
+				>{\small }       p{11cm}
+				@{\vspace{0.5mm}}
+			}
+			Thesis: &
+			Predicting failures in medium voltage lines from sequence of SCADA events.
+			\newline
+			(Sponsored By			\href{https://www.enel.com/}{\includegraphics[width=0.06\textwidth, ,clip]{image.pdf}})
+			\\
+			%-----------------Concentrations-------------------
+			Concentrations: &
+			Deep Learning, categorical time series prediction, anomaly detection(supervised and unsupervised), generative models, embedding methods.
+			\\
+			%-----------------Advisor-------------------
+			Mentors: &
+			{\bf Sébastien Bratières} from university of Cambridge and director of AI in Translated; \& {\bf Francesco Mosconi}, CEO and Chief Data Scientist at CATALIT, San Francisco, California.
+			\\
+			Alumni: &
+			I am included as the AI program Alumni.
+			\url{https://picampus-school.com/about-us/ }
+		\end{tabular}
+		\vspace{10 mm}	
+		
+%		\multicolumn{1}{m{13cm}|}
+	%---------------------------------------
+	%    Ph.D.
+	%----------------------------------------	
+
+	\item
+		{\Large \textbf {Ph.D. in Artificial intelligence}	}	%-----------------date------------------
+		\hfill{\small September 2007 -- February 2014}
+		%-----------------location-------------------
+		\vspace{2 mm}
+		\\{\large \em 
+			\href{http://srbiau.ac.ir/en}
+			{Azad University, Science and Research Branch, Tehran Iran}
+		}
+		\vspace{3 mm}
+		\\
+		\begin{tabular}{ 
+				@{\hspace{1.5cm}}>{\bf \em \small}l
+				>{\small }       p{11cm}
+				@{\vspace{0.5mm}}
+			}
+			%-----------------Thesis-------------------	
+			Thesis: &
+			jobs interaction theory to train hyper-parameters of the cultural optimization algorithm.\\
+			%-----------------Concentrations-------------------
+			Concentrations: &
+			cultural optimization algorithm, neural network, multi-agent system, derivative-free learning algorithm, feature extraction.\\
+			%-----------------Advisor-------------------	
+			Advisors: &
+			\href{https://wp.kntu.ac.ir/teshnehlab/}{professor {\bf Mohammad Teshnehlab}.}\\
+			%-----------------Advisor------------------
+			GPA: & 
+			18.79 / 20.00
+			
+		\end{tabular}
+		\vspace{10 mm}
+	%---------------------------------------
+	%    Ms.
+	%----------------------------------------
+	\item
+	   {\Large \textbf {M.Sc in Artificial intelligence}}
+	   %-----------------date------------------
+	   \hfill{\small September 2005 -- September 2007}
+	   	%-----------------location-------------------
+	   	\vspace{2 mm}
+	   	\\{\large \em 
+	   		\href{http://srbiau.ac.ir/en}
+	   		{Azad University, Science and Research Branch, Tehran Iran}
+	   	}
+	   	\vspace{3 mm}
+	   	\\
+	   	\begin{tabular}{ 
+	   			@{\hspace{1.5cm}}>{\bf \em \small}l
+	   			                 >{\small }       p{11cm}
+	   			@{\vspace{0.5mm}}
+	   		}
+			%-----------------Thesis-------------------			
+			Thesis: &
+			multi-objective optimization to train neural networks and neuro-fuzzy systems.\\
+			%-----------------Concentrations-------------------
+			Concentrations: &
+			multi-objective optimization, neural network and fuzzy system, combination of both derivative-base and derivative-free learning algorithms to prevent vanishing and exploding of gradient, and overfitting.\\
+			%-----------------Advisor-------------------	
+			Advisors: &
+			\href{https://wp.kntu.ac.ir/teshnehlab/}{professor {\bf Mohammad Teshnehlab}.}\\
+			%-----------------GPA------------------
+			GPA: & 
+			18.08 / 20.00
+		\end{tabular}
+		\vspace{10 mm}
+ 	%---------------------------------------
+ 	%    Bs.
+ 	%----------------------------------------
+ 	\item
+	   {\Large \textbf {B.Sc. in Computer Software Engineering}} %-----------------date------------------
+	   \hfill{\small September 2001 -- July 2005}
+	   	%-----------------location-------------------
+	   	\vspace{2 mm}
+	   	\\{\large \em 
+	   		\href{http://tuyiau.ac.ir/en/about-university-en}
+	   		{Azad University, Iran}
+	   	}
+	   	\vspace{3 mm}
+	   	\\
+		\begin{tabular}{ @{\hspace{1.5cm}}>{\bf \em \small}l
+				>{\small }p{11cm}
+				@{\vspace{0.5mm}	}
+			}
+			%-----------------Thesis-------------------			
+			Thesis: &
+			implementation of an automation system for the dairy industry.\\
+			%-----------------Concentrations-------------------
+			Concentrations: &
+			RUP methodology,data base management, SQL, object oriented programing, designing algorithm, data structure, Java, Visual C++.\\
+			%-----------------GPA------------------
+			GPA: &   
+			18.36 / 20.00
+		\end{tabular}
+		
+%	\end{itemize}
+\end{rSection}
+%\newpage
+
+	
+%---------------------------------------
+%    Section publications
+%----------------------------------------
+\pdfbookmark{Publications}{s3}
+\begin{rSection}{Publications\small{(\href{https://scholar.google.com/citations?hl=en&user=L2z7NuwAAAAJ&view_op=list_works}{Google Scholar})}}
+	\nocite{*}
+\bibliographystyle{plain}
+%\bibliography{publication.bib}
+\nobibliography{publication.bib}
+\vspace{1 pt}
+%	\begin{tabular}{L!{\VRule} R }	
+    \begin{itemize}       			
+		\item[{\bf2015}] \bibentry{p10}
+		\item[{\bf2015}] \bibentry{p9} 
+		\item[{\bf2014}] \bibentry{p8}
+		\item[{\bf2010}] \bibentry{p7} 
+		\item[{\bf2008}] \bibentry{p6}
+		\item[{\bf2007}] \bibentry{p5} 
+		\item[{\bf2007}] \bibentry{p4}
+		\item[{\bf2007}] \bibentry{p3} 
+		\item[{\bf2006}] \bibentry{p2}
+		\item[{\bf2006}] \bibentry{p1} 	
+	\end{itemize}
+	{\bf Under Review Publications:}
+	\begin{itemize}
+		\item[{\bf2019}] Sentiment Analysis based on Deep Learning Methods : A survey      			
+		\item[{\bf2019}] Diagnosis of Atrial Fibrillation with Deep Auto-Encoder and LGBM
+		\item[{\bf2019}] Multi-Source Domain Adaptation via Low Rank and Sparse Representation 
+		\item[{\bf2018}] Community Detection in weighted Networks using BIGCLAM Algorithm 
+		\item[{\bf2018}] Trustworthy Recommender Systems based on prevention of fake identities influence
+		\item[{\bf2018}] Using users’ reviews to improve the performance of Matrix Factorization in Recommender Systems
+		\item[{\bf2018}]An inverse model-based multi-objective EDA using Random-Forest variable importance methods
+	\end{itemize} 
+			
+	%\end{tabular} 				
+\end{rSection}
+\newpage
+%---------------------------------------
+%    Section WORK EXPERIENCES
+%----------------------------------------
+\pdfbookmark{Work Experiences}{s4}
+\begin{rSection}{Work Experiences}
+	
+	\workposition{Machine Learning Expert and Data Scientist} % Employer 
+	{Apr 2019} % Duration
+	{Jun 2019}
+	{\href{https://picampus.it/}{Pi Campus},  (Rome, Italy)}
+	% Job title
+	%The milestone of a particular project which has been defined and founded by \href{https://www.enel.com/}{Enel}​ has been forecasting the anomalies based on sequences of events in the electrical grid.
+	{ My proposal has been transforming it into the text anomaly detection problem. So I've worked on custom embedding method and deep neural network architectures.\\} % Description
+	
+	%------------------------------------------------
+	\workposition{Head of Department of AI} % Duration
+	{Oct 2017} % Duration
+	{Apr 2019}
+	{\href{http://azad.ac.ir/en}{Azad University,South Tehran Branch}, (Tehran, Iran)}
+	% Job title
+	{Develop and sustain appropriate structures for management, consultation, decision-making and communication with staff and students; Relationship with industry in order to obtain a research project;  Ensure the highest levels of quality, integrity and ethics in all research undertaken; Deciding on which courses should be teaching in each semester and assign them to the teachers in line with faculty and university strategic plans and direction.\\} % Description
+	%------------------------------------------------
+	\workposition{Assistant professor in AI Department} % Duration
+	{Feb 2014} % Duration
+	{Present}
+	{\href{http://azad.ac.ir/en}{Azad University, South Tehran Branch}, (Tehran, Iran)}
+	% Job title
+	{As a faculty member of the AI department, I develop new research projects, and cooperate in existing research projects, supervise PhD and MSc students research, and teach 14 hours per week. my activity area has been machine learning, deep learning, text mining, mining of massive data and probabilistic models.\\} % Description
+	%------------------------------------------------
+	\workposition{Lecturer in Computer Eng. Department} % Duration
+	{Oct 2010} % Duration
+	{Feb 2014}
+	{\href{http://azad.ac.ir/en}{Azad University, South Tehran Branch}, (Tehran, Iran)}
+	% Job title
+	{I have been teaching some of computer engineering courses including algorithm concepts, object-oriented programming, data structures, database management(SQL) and software methodology(RUP, Agile) to the bachelor students in the department of computer software engineering. Also, I've been supervising some of software development projects.\\} % Description
+	%------------------------------------------------
+	\workposition{Research Fellowship} % Duration
+	{Oct 2007} % Duration
+	{Jun 2010}
+	{\href{https://en.kntu.ac.ir/}{KNTU, ISLAB} (Tehran, Iran)}
+	% Job title
+	{I had been awarded two research fellowship from the Intelligence System Laboratory, KNTU, Tehran, Iran. The first research project was how to hybrid optimization algorithm to training fuzzy neural networks from 2007 till 2008. The second research project was investigating multi-objective optimization methods(2008-2010). \href{https://wp.kntu.ac.ir/teshnehlab/}{professor Mohammad Teshnehlab} led projects.
+		\\}
+
+\end{rSection}
+
+%---------------------------------------
+%    Section Teaching Experiences
+%----------------------------------------
+\pdfbookmark{Courses Taught}{s5}
+\begin{rSection}{Courses Taught}	
+	%\begin{itemize}	
+		\item {\large \bf PhD and master's degree :}
+		\hfill{2014-present}
+		\begin{itemize}
+			\item[-] Machine Learning
+			\item[-] Deep Learning
+			\item[-] Natural Language Processing
+			\item[-] Speech Processing
+			\item[-] Mining of Massive Data Sets
+			\item[-] Advanced Artificial Intelligence (Reinforcement learning and PGM)			
+		\end{itemize}
+		\item {\large \bf Bachelor's degree :}
+		\hfill{2010-present}
+		\begin{itemize}	
+			\item[-] Artificial Intelligence(Search, CSP, Adversarial Search, Logic Programming)		
+			\item[-] Foundation of Programming(C / Python)
+			\item[-] Object-Oriented Programming(Java)			
+			\item[-] formal language and automata theory
+		\end{itemize}
+	%\end{itemize}
+\end{rSection}
+%---------------------------------------
+%    Section Technical Skills
+%----------------------------------------
+\pdfbookmark{Technical Skills}{s6}
+\begin{rSection}{Technical Skills}	
+	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}}p{11cm} @{\vspace{2ex}}l}
+		Programming Languages: \ & Python, Java, C, C++, MATLAB, R, ProLog. \\
+		Python Stack: \ & PyTorch, Keras, TensorFlow, Gensim, NLTK, NumPy, Pandas, SiKit-Learn, SciPy, Scrapy, Matplotlib, Seaborn, ... \\
+		Databases Management: \ & SQL \\		
+		Writing: \ &  \LaTeX, Microsoft Office, Markdown, HTML\\
+		Others: \ &  AWS cloud platform, Git, GitHub, Software Development, RUP, Agile.
+	\end{tabular}	
+\end{rSection}
+%---------------------------------------
+%    HONORS & OTHER ACHIVEMENTS
+%----------------------------------------
+\pdfbookmark{Honors}{s7}
+\begin{rSection}{Honors \& Other Achievements}
+		%------------------------------------------------
+		\workposition{merit-based scholarship form school of AI, Rome, Italy} 
+		{2019} % Duration
+		{}
+		{Pi Campus, Rome, Italy}
+		% Job title
+		{} % Description
+		%------------------------------------------------
+		%------------------------------------------------
+		\workposition{Silver medal on Kaggle Competitions} 
+		{2017} % Duration
+		{}
+		{\href{https://www.kaggle.com/c/zillow-prize-1}{Zillow’s Home Value Prediction}, Seattle, USA}
+		% Job title
+		{I have achieved the rank of 71 among 3779 teams (top 2\%) and got one silver medal.} % Description
+		%------------------------------------------------
+		%------------------------------------------------
+		\workposition{Excellence in Teaching Award} % title
+		{2014} % Duration
+		{2019}
+		{Azad University, Tehran, Iran} %Location		
+		{I have got more than 18 / 20 teacher assessment score in university teacher assessment system for every semester.} % Description
+		%------------------------------------------------
+		%------------------------------------------------
+		\workposition{Ph.D. scholarship} % title
+		{2010} % Duration
+		{}
+		{Azad University, South Tehran Branch, Tehran, Iran} %Location		
+		{} % Description
+		%------------------------------------------------
+		%------------------------------------------------
+		\workposition{Research Fellowship} % title
+		{2008} % Duration
+		{}
+		{KNTU, Intelligence System Lab, Tehran, Iran} %Location		
+		{Multi-Objective Optimization} % Description
+		%------------------------------------------------
+		%------------------------------------------------
+		\workposition{Research Fellowship} % title
+		{2007} % Duration
+		{}
+		{KNTU, Intelligence System Lab, Tehran, Iran} %Location		
+		{hybrid optimization methods to train neural network and fuzzy systems} % Description
+		%------------------------------------------------
+		%------------------------------------------------
+		\workposition{Top Rank Graduated Student in B. Sc.} % title
+		{2005} % Duration
+		{}
+		{Azad University, Iran} %Location		
+		{} % Description
+		%------------------------------------------------	
+	
+\end{rSection}
+%---------------------------------------
+%         References
+%----------------------------------------
+\pdfbookmark{References}{s8}
+\begin{rSection}{References}
+	\begin{tabular}{ @{} >{\bfseries}l 
+			         @{\hspace{2ex}} p{11cm}			         
+			         @{\vspace{1mm}}
+			       }
+      \iftrue
+      %\iffalse
+    	%------------------------------------------------------
+        %              Mojtaba Ahmadieh khanesar
+		%------------------------------------------------------
+            \href{https://www.nottingham.ac.uk/research/groups/advanced-manufacturing-technology-research-group/meet-the-team/mojtaba.ahmadiehkhanesar}
+            {Dr. Mojtaba Ahmadieh khanesar}
+            & Postdoctoral Research Fellow in \href{https://www.nottingham.ac.uk/}{University of Nottingham}, Nottinghamshire, United Kingdom,  and Senior Member IEEE.\newline
+            \faPhone \hspace{2 mm} (+44)07918778402 \newline
+            \faEnvelopeO \hspace{2 mm} Mojtaba.Ahmadiehkhanesar@nottingham.ac.uk \\ [1 pt]
+        \fi
+     	%------------------------------------------------------
+     	\iftrue
+     	%\iffalse
+     	%------------------------------------------------------
+     	%              Sébastien Bratières
+     	%------------------------------------------------------
+	        \href{http://mlg.eng.cam.ac.uk/sebastien/}
+	        {Dr. Sébastien Bratières}
+	        & Director of Artificial Intelligence at \href{https://translated.com}{Translated}, Pi Campus, Rome, Italy, and member of the Machine Learning group of the Cambridge University Engineering Department.\newline
+	        \faPhone \hspace{2 mm} (+39) 370 131 7570\newline
+	        \faEnvelopeO \hspace{2 mm}sebastien.bratieres@centraliens.net
+	        \\[1 pt]
+		 \fi
+		 %------------------------------------------------------
+		 \iftrue
+		 %\iffalse
+		 %------------------------------------------------------
+		 %              Mohamad Teshnehlab
+		 %------------------------------------------------------
+        	\href{https://wp.kntu.ac.ir/teshnehlab/}
+        	{Prof. Mohamad Teshnehlab}  
+        	& Full Professor, K. N. Toosi University of Technology
+        	Electrical Eng. Faculty,Tehran, Iran.\newline
+        	\faPhone \hspace{2 mm} (+98)021-84062323 \newline
+        	\faEnvelopeO \hspace{2 mm} teshnehlab@eetd.kntu.ac.ir
+        	\\[1 pt]
+      	 \fi
+      	 %------------------------------------------------------
+      	 %\iftrue
+      	 \iffalse
+      	 %------------------------------------------------------
+      	 %              Masoud Barati
+      	 %------------------------------------------------------
+        	\href{https://www.cardiff.ac.uk/people/view/1369635-barati-masoud}
+        	{Dr. Masoud Barati}
+        	& Postdoctoral Research Fellow at University of Cardiff, Cardiff, CF10 3AT\newline
+        	\faPhone \hspace{2 mm} +44(0)7902120645 \newline
+        	\faEnvelopeO \hspace{2 mm} baratim@cardiff.ac.uk 
+        	\\[1 pt]
+      	 \fi
+      	 %------------------------------------------------------
+      	 \iftrue
+      	 %\iffalse
+      	 %------------------------------------------------------
+      	 %             Peyman Sheikholharam Mashhadi
+      	 %------------------------------------------------------
+	       	\href{https://www.hh.se/information/sok-personal.html?url=-1708965309\%2Fl9\%2Fhhstaff\%2Fen\%2Fdetail.lasso\%3Fdo\%3Dstart\%26groupmember\%3D021ea77a-f9b9-4b35-a7c3-50827f084f49\&sv.url=12.3252fcc5165f6c51bf6b69ae}
+	       	{Dr. Peyman Sheikholharam Mashhadi}
+	       	& Postdoctoral Research Fellow at Halmstad University,
+	       		Sweden\newline
+	       	\faPhone \hspace{2 mm} +46736744987 \newline
+	       	\faEnvelopeO \hspace{2 mm} peyman.mashhadi@hh.se 
+	    \fi   	
+     	%------------------------------------------------------
+     	
+        	
+	\end{tabular}
+\end{rSection}
+\pdfbookmark{Update}{s9}
+\begin{rSection}{Update November 2019}
+\end{rSection}
+
+\end{document}
