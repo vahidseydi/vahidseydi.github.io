@@ -1,0 +1,226 @@
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2021.4.1)  9 SEP 2022 16:33
+ system commands enabled.
+**example.tex
+(./example.tex
+LaTeX2e <2020-10-01> patch level 4
+Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
+Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-12-30 2.73 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/Users/vhs20ltg/AppData/Local/MiK
+TeX/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2021-01-07.lua" from kpse-res
+olved path "C:/Users/vhs20ltg/MiKTeX/tex/luatex/luaotfload/fontloader-2021-01-07
+.lua".
+Lua-only attribute luaotfload@noligature = 1
+Lua-only attribute luaotfload@syllabe = 2
+luaotfload | init : Context OpenType loader version 0x1.8e76c8b439581p+1
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 3
+luaotfload | conf : Root cache directory is "C:/Users/vhs20ltg/AppData/Local/MiK
+TeX/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Inserting `luaotfload.harf.finalize_vlist' at position 1 in `post_linebreak_filt
+er'.
+Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2021-01-09> xparse <2020-03-03>
+(C:/Users/vhs20ltg/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:/Users/vhs20ltg/MiKTeX/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/vhs20ltg/AppData/Loca
+l/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc)
+\c@part=\count173
+\c@section=\count174
+\c@subsection=\count175
+\c@subsubsection=\count176
+\c@paragraph=\count177
+\c@subparagraph=\count178
+\c@figure=\count179
+\c@table=\count180
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (./pyluatex.sty
+Package: pyluatex 2022/06/05 v0.5.0 Execute Python code on the fly
+
+(C:/Users/vhs20ltg/MiKTeX/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-01-09 L3 programming layer (loader) 
+
+(C:/Users/vhs20ltg/MiKTeX/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2021-01-09 L3 backend support: PDF output (LuaTeX)
+\l__kernel_color_stack_int=\count181
+\l__pdf_internal_box=\box47
+))[\directlua]:1: module 'pyluatex' not found:
+	no field package.preload['pyluatex']
+	[kpse lua searcher] file not found: 'pyluatex'
+	[kpse C searcher] file not found: 'pyluatex'
+stack traceback:
+	[C]: in function 'require'
+	[\directlua]:1: in main chunk.
+l.24 \directlua{require("pyluatex")}
+                                  
+? 
+(C:/Users/vhs20ltg/MiKTeX/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(C:/Users/vhs20ltg/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:/Users/vhs20ltg/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/vhs20ltg/MiKTeX/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))[\directlua]:1: attempt to index a nil value (global 'pyluatex')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.34 ...\ifpyluatex@ignoreerrors true\else false\fi}
+                                                  
+? 
+[\directlua]:1: attempt to index a nil value (global 'pyluatex')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.35 ...se = \ifpyluatex@verbose true\else false\fi}
+                                                  
+? 
+[\directlua]:1: attempt to index a nil value (global 'pyluatex')
+stack traceback:
+	[\directlua]:1: in main chunk.
+l.39 )}
+     
+? 
+(C:/Users/vhs20ltg/MiKTeX/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+))[\directlua]:1: attempt to index a nil value (global 'pyluatex')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\python ... {pyluatex.record_env("python", false)}
+                                                  
+l.4 \begin{python}
+                
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 	i
+    mport math
+? 
+[\directlua]:1: attempt to index a nil value (global 'pyluatex')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\endpython ->\directlua {pyluatex.print_env()}
+                                              
+l.9 \end{python}
+              
+? 
+(./example.aux)
+\openout1 = example.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+3.
+ (C:/Users/vhs20ltg/MiKTeX/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+[\directlua]:1: attempt to index a nil value (global 'pyluatex')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\pyluatex@inline ...[#1]==], #2, #3, false, true)}
+                                                  
+l.14 	\py{greeting}
+                 
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 17.
+[\directlua]:1: attempt to index a nil value (global 'pyluatex')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\pyluatex@inline ...[#1]==], #2, #3, false, true)}
+                                                  
+l.17 	$\sqrt{371} = \py{math.sqrt(371)}
+                                     $
+? 
+[\directlua]:1: attempt to index a nil value (global 'pyluatex')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\pyluatex@inline ...[#1]==], #2, #3, false, true)}
+                                                  
+l.19 	\randint{2}{5}
+                  
+? 
+[1
+
+{C:/Users/vhs20ltg/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+(./example.aux)[\directlua]:1: attempt to index a nil value (global 'pyluatex')
+stack traceback:
+	[\directlua]:1: in main chunk.
+\__hook enddocument/end ...a {pyluatex.shutdown()}
+                                                  \__hook_toplevel enddocume...
+l.20 \end{document}
+                 
+? 
+)
+
+Here is how much of LuaTeX's memory you used:
+ 898 strings out of 478821
+ 100000,383344 words of node,token memory allocated
+ 406 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 48 glue_spec,
+ 4 attribute_list, 1 write nodes
+   avail lists: 2:29,3:6,4:2,5:26,6:4,7:208,8:4,9:28,10:1,11:16
+ 20575 multiletter control sequences out of 65536+200000
+ 33 fonts using 3269615 bytes
+ 68i,4n,72p,167b,114s stack positions out of 5000i,500n,10000p,200000b,50000s
+<//?/c:/users/vhs20ltg/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><C:
+/Users/vhs20ltg/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vhs20l
+tg/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on example.pdf (1 page, 22283 bytes).
+
+PDF statistics: 21 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+
