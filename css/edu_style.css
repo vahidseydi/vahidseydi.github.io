@@ -1,7 +1,5 @@
 /* Timeline holder */
-.container {
-  max-width: 95%;
-}
+
 ul.edu_timeline {
   list-style-type: none;
   position: relative;
