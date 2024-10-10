@@ -9,7 +9,7 @@
                 <p  style="color:black; text-align:justify">
                         Vahid Seydi is a Research Fellow in the School of Ocean Science at Bangor University in Data Science (DS) and Machine Learning (ML). Prior to Bangor, Vahid was an Assistant Professor at the Department of AI at Azad University South Tehran Branch (Feb 2014 - Sep 2020) and was an award-winning lecturer (Oct 2010 – Feb 2014). He received a B.Sc.(2005) in software engineering, M.Sc. (2007) and PhD(2014) in AI, from the Department of Computer Science at Science and Research University, Tehran Iran. He has been awarded Global Talen endorsement from the UK Royal Society (2023); his current research fellowship(2020); a merit-based scholarship for attending the school of AI, Rome, Italy(2019); a full scholarship Award from Azad University(2010-2014); and KNTU ISLAB Research Fellowship (2007-2010). Throughout his studies, he consistently achieved grades above 18 out of 20 in nearly all modules, and I often secured the first-ranked student. 
                         He possesses 15 years of extensive experience in diverse areas of Data Science (DS) and Machine Learning (ML).
-                        <a href='http://www.cao.bangor.ac.uk/staff/vahid-seydi/en'>
+                        <a href='https://www.bangor.ac.uk/staff/sos/vahid-seydi-533484/en'>
                             <span style="color:blue">(university homepage)</span>
                         </a>
                         </p>                       
