@@ -7,9 +7,12 @@
             <div  class="col bio">
                 <h2>Biography</h2>
                 <p  style="color:black; text-align:justify">
-                        Vahid Seydi is a Research Fellow in the School of Ocean Science at Bangor University in Data Science (DS) and Machine Learning (ML). Prior to Bangor, Vahid was an Assistant Professor at the Department of AI at Azad University South Tehran Branch (Feb 2014 - Sep 2020) and was an award-winning lecturer (Oct 2010 – Feb 2014). He received a B.Sc.(2005) in software engineering, M.Sc. (2007) and PhD(2014) in AI, from the Department of Computer Science at Science and Research University, Tehran Iran. He has been awarded Global Talen endorsement from the UK Royal Society (2023); his current research fellowship(2020); a merit-based scholarship for attending the school of AI, Rome, Italy(2019); a full scholarship Award from Azad University(2010-2014); and KNTU ISLAB Research Fellowship (2007-2010). Throughout his studies, he consistently achieved grades above 18 out of 20 in nearly all modules, and I often secured the first-ranked student. 
-                        He possesses 15 years of extensive experience in diverse areas of Data Science (DS) and Machine Learning (ML).
-                        <a href='https://www.bangor.ac.uk/staff/sos/vahid-seydi-533484/en'>
+                        I am a Lecturer in Data Science at the University of the West of England (UWE Bristol), a role I began in June 2025. My research sits at the intersection of mathematical machine learning theory and real-world application, developing and improving models at a foundational level, with a particular focus on environmental and marine domains.
+                        Previously, I was a Research Fellow in Data Science and Machine Learning at the School of Ocean Sciences, Bangor University (2020–2025), where I also led Data Science modules in the School of Computer Science and Electronic Engineering.
+                        Before moving to the UK, I was an Assistant Professor in the Department of Artificial Intelligence at Azad University, South Tehran Branch (2014–2020), having joined as a Lecturer in 2010.
+                        I hold a B.Sc. in Software Engineering (2005), an M.Sc. in Artificial Intelligence (2007), and a Ph.D. in Artificial Intelligence (2014) from the Science and Research University, Tehran.
+                        My work has been recognised through a number of awards and fellowships. Notably, I received a Global Talent Endorsement from the UK Royal Society in 2023, awarded to researchers recognised as world-leading or with the potential to become so. Further fellowships include a Research Fellowship at Bangor University (2020–2025), a scholarship to the School of AI in Rome (2019), a full PhD scholarship from Azad University (2010–2014), and a Research Fellowship at KNTU ISLAB (2007–2010).
+                        <a href='https://people.uwe.ac.uk/Person/VahidSeydi'>
                             <span style="color:blue">(university homepage)</span>
                         </a>
                         </p>                       
