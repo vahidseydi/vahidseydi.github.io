@@ -1,23 +1,15 @@
 <section class="resume-section" >
     <div class="container">
-        <div class="row">
-            <div  class="col vhd_img" >
-                <img  src="/assets/img/profile1.png">                              
-            </div>            
-            <div  class="col bio">
-                <h2>Biography</h2>
-                <p  style="color:black; text-align:justify">
-                        I am a Lecturer in Data Science at the University of the West of England (UWE Bristol), a role I began in June 2025. My research sits at the intersection of mathematical machine learning theory and real-world application, developing and improving models at a foundational level, with a particular focus on environmental and marine domains.
-                        Previously, I was a Research Fellow in Data Science and Machine Learning at the School of Ocean Sciences, Bangor University (2020–2025), where I also led Data Science modules in the School of Computer Science and Electronic Engineering.
-                        Before moving to the UK, I was an Assistant Professor in the Department of Artificial Intelligence at Azad University, South Tehran Branch (2014–2020), having joined as a Lecturer in 2010.
-                        I hold a B.Sc. in Software Engineering (2005), an M.Sc. in Artificial Intelligence (2007), and a Ph.D. in Artificial Intelligence (2014) from the Science and Research University, Tehran.
-                        My work has been recognised through a number of awards and fellowships. Notably, I received a Global Talent Endorsement from the UK Royal Society in 2023, awarded to researchers recognised as world-leading or with the potential to become so. Further fellowships include a Research Fellowship at Bangor University (2020–2025), a scholarship to the School of AI in Rome (2019), a full PhD scholarship from Azad University (2010–2014), and a Research Fellowship at KNTU ISLAB (2007–2010).
-                        <a href='https://people.uwe.ac.uk/Person/VahidSeydi'>
-                            <span style="color:blue">(university homepage)</span>
-                        </a>
-                        </p>                       
+        <div class="row align-items-center">
+            <div class="col-md-4 vhd_img" style="margin-bottom:1em;">
+                <img class="img-fluid rounded" src="/assets/img/profile1.png" alt="Vahid Seydi">
             </div>
-        </div>       
+            <div class="col-md-8 bio">
+                <h2>Biography</h2>
+                <p style="color:black; text-align:justify">I am a Senior Lecturer in Data Science/Data Analytics at UWE Bristol, which I joined as a Lecturer in June 2025; I was promoted in June 2026. My research sits at the intersection of mathematical machine learning theory and real-world application, across four connected areas: the mathematical foundations of generative models, trustworthy and explainable AI, AI for environmental and marine science, and reinforcement learning and optimisation. From 2020 to 2025 I was a Research Fellow in Data Science at Bangor University's School of Ocean Sciences, where I designed a digital twin for the NERC-funded ECOWind-ACCELERATE project, and I remain an Honorary Research Fellow there. Previously I was Assistant Professor and Head of the Department of Artificial Intelligence at Azad University, South Tehran Branch. I hold a PhD in Artificial Intelligence from the Science and Research University, Tehran, and in 2023 received a Global Talent Endorsement from the Royal Society.
+                <a href='https://people.uwe.ac.uk/Person/VahidSeydi'><span style="color:blue">(university homepage)</span></a></p>
+            </div>
+        </div>
     </div>
 </section>
 <!--img  src="/assets/img/Bangor-University-Logo.png"  style="position:relative;"  height="60"  alt="" -->
